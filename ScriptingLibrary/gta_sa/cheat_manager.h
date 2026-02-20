@@ -121,8 +121,8 @@ if 8039:   not 3@ == 0
 then 0DDE: call_func 3@ add_ib 0 // android 
 else
     if 0039:   2@ == 0 
-    then 0006: 2@ = 1 
-    else 0006: 2@ = 0 
+    then 0006: 2@ = true 
+    else 0006: 2@ = false 
     end
     2402: write_memory_with_offset 1@ offset 4@ size 1 value 2@ 
 end
