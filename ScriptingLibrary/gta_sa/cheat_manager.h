@@ -112,7 +112,7 @@ end
 0DD0: 1@ = get_label_addr @_ZN6CCheat15m_aCheatsActiveE // android 
 0DD1: 1@ = get_func_addr_by_cstr_name 1@ // android 
 0085: 4@ = 0@ // (int) 
-2401: read_memory_with_offset 1@ offset 0@ size 1 store_to 2@ 
+2401: read_memory_with_offset 1@ offset 4@ size 1 store_to 2@ 
 0DD0: 3@ = get_label_addr @_ZN6CCheat17m_aCheatFunctionsE // android 
 0DD1: 3@ = get_func_addr_by_cstr_name 3@ // android 
 0012: 0@ *= 4 
