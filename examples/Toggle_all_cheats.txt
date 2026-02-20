@@ -1,0 +1,10 @@
+{$CLEO .csi}
+{$INCLUDE ScriptingLibrary/gta_sa/cheat_manager.h}
+0000: NOP 
+
+:main
+wait 0 ms
+for 0@ = CHEAT_WEAPON_SET1 to CHEAT_TAXI_NITRO step 1
+    0AB1: call_scm_func @toggleCheats 1 0@ 
+end
+end_thread
