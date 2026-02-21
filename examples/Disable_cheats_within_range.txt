@@ -1,0 +1,8 @@
+{$CLEO .csi}
+{$INCLUDE ScriptingLibrary/gta_sa/cheat_manager.h}
+0000: NOP 
+
+:main
+wait 0 ms
+0AB1: call_scm_func @disableCheats 2 CHEAT_INVINCIBILITY CHEAT_ONLY_RENDER_WHEELS 
+end_thread
